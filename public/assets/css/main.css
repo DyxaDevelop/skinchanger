@@ -1,0 +1,467 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600&display=swap');
+
+main {
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.info-block {
+    width: 355px;
+    height: 300px;
+    z-index: 1;
+
+}
+.info-block > h1 {
+    width: 350px;
+    font-size: 34px;
+    line-height: 3rem;
+}
+.info-block > p {
+    width: 300px;
+    font-size: 16px;
+    line-height: 1.5rem;
+}
+.button-group{
+    display: flex;
+    flex-direction: row;
+    margin: 35px 0;
+    z-index: 100;
+}
+.play-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    border: 0;
+    background: linear-gradient(90deg, #FF3030 0%, #FF7878 100%);
+    box-shadow: 0px 0px 22px 0 #FF7878;
+    margin-left: 30px;
+}
+
+.play-btn:hover {
+    background: #FF3030;
+}
+
+.download-btn {
+    width: 310px;
+    height: 52px;
+    color: #fff;
+    background-color: #4E7CFF;
+    border: 0;
+    border-radius: 5px;
+}
+
+.download-btn:hover {
+    color: #4E7CFF;
+    background-color: transparent;
+    border: 2px solid #4E7CFF;
+}
+
+.download-btn:active {
+    color: #4E7CFF;
+    background-color: #fff;
+    border: 2px solid #4E7CFF;
+}
+.in-game {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+#inGame {
+    color: #B7DF43;
+}
+.slider {
+    display: flex;
+    flex-direction: row;
+}
+
+.main-block {
+    margin-top: 176px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+}
+.hero {
+    display: flex;
+    width: 133px;
+    height: 180px;
+    margin: 0 5px;
+    border: 0;
+    border: 3px solid white;
+}
+.hero-name {
+    display: flex;
+    position: absolute;
+    align-self: flex-end;
+    width: 127px;
+    font-size: 12px;
+    height: 45px;
+    backdrop-filter: blur(5px);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-hero-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+}
+.change-hero-block > .hero {
+    margin: 0;
+}
+
+.download-for-free-btn {
+    width: 283px;
+    height: 52px;
+    margin-top: 30px;
+    background-color: #FECD40;
+    border: 0;
+    border-radius: 5px;
+}
+
+.download-for-free-btn:hover {
+    background-color: transparent;
+    border: 2px solid #FECD40;
+    color: #FECD40;
+}
+.download-for-free-btn:active {
+    background-color: #ffffff;
+    border: 2px solid #FECD40;
+    color: #FECD40;
+}
+
+
+
+
+.download-for-free-btn > img{
+    margin-bottom: 8px;
+}
+
+.change-block{
+    width: 283px;
+    height: 100%;
+}
+
+.change-block > p {
+    color: #8E8B90;
+    width: 200px;
+}
+
+#hexagon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	width: 70px;
+    height: 35px;
+	background: #FFCC40;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    border-top: 1px solid  #FFCC40;
+    border-bottom: 1px solid  #FFCC40;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 50px 4px #FECD40; 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 50px 4px #FECD40;
+    cursor: pointer;
+}
+
+#hexagon:hover{
+    background-color: #FFBB00;
+    -webkit-transition: 0.5s 0s ease;
+    -moz-transition: 0.5s 0s ease;
+    -o-transition: 0.5s 0s ease;
+    transition: 0.5s 0s ease;
+    -webkit-box-shadow: 0px 10px 13px -7px #000000, 0px 0px 50px 4px #FECD40; 
+    box-shadow: 0px 10px 13px -7px #000000, 0px 0px 50px 4px #FECD40;
+}
+#hexagon > img{
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+#hexagon:before {
+    content: "";
+    position: absolute;
+    top: -25px;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-left: 35px solid transparent;
+    border-right: 35px solid transparent;
+    border-bottom: 25px solid #FFCC40;
+    z-index: 100;
+}
+#hexagon:after {
+	content: "";
+	position: absolute;
+	bottom: -25px; 
+	left: 0;
+	width: 0;
+	height: 0;
+	border-left: 35px solid transparent;
+	border-right: 35px solid transparent;
+    border-top: 25px solid #FFCC40;
+    z-index: 100;
+}
+#hexagon:hover:after{
+    border-top: 25px solid #FFBB00;
+    -webkit-transition: 0.5s 0s ease;
+    -moz-transition: 0.5s 0s ease;
+    -o-transition: 0.5s 0s ease;
+    transition: 0.5s 0s ease;
+}
+
+#hexagon:hover:before{
+    border-bottom: 25px solid #FFBB00;
+    -webkit-transition: 0.5s 0s ease;
+    -moz-transition: 0.5s 0s ease;
+    -o-transition: 0.5s 0s ease;
+    transition: 0.5s 0s ease;
+}
+
+.hero-block > img {
+    height: 791px;
+    margin-bottom: -40%;
+    background: transparent;
+}
+.hero-block {
+    display: flex;
+    justify-content: center;
+    width: 817px;
+    height: 100%;
+    margin-left: -50px;
+    margin-right: -50px;
+    z-index: -1;
+}
+
+  .pulse {
+    width: 10px;
+    height: 10px;
+    margin-top: -18px;
+    margin-right: 15px;
+    color:gray;
+    background: #B7DF43;
+    border-radius: 50%;
+    animation: radial-pulse 1s infinite;
+  }
+  
+  
+  /* Animation */
+
+.scale-up-center {
+	-webkit-animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) backwards;
+	        animation: scale-up-center 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) backwards;
+}
+
+.rotate-center {
+	-webkit-animation: rotate-center 0.6s ease-in-out both;
+	        animation: rotate-center 0.6s ease-in-out both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-10-9 15:4:52
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-center
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  @keyframes scale-up-center {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+  }
+  /* ----------------------------------------------
+ * Generated by Animista on 2020-10-9 15:6:38
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-center
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+  }
+  @keyframes rotate-center {
+    0% {
+      -webkit-transform: rotate(90deg);
+              transform: rotate(90deg);
+    }
+    100% {
+      -webkit-transform: rotate(270deg);
+              transform: rotate(270deg);
+    }
+  }
+  
+
+  .scale-up-top {
+	-webkit-animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: scale-up-top 0.4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+/* ----------------------------------------------
+ * Generated by Animista on 2020-10-9 15:15:53
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation scale-up-top
+ * ----------------------------------------
+ */
+ @-webkit-keyframes scale-up-top {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+  @keyframes scale-up-top {
+    0% {
+      -webkit-transform: scale(0.5);
+              transform: scale(0.5);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+    100% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      -webkit-transform-origin: 50% 0%;
+              transform-origin: 50% 0%;
+    }
+  }
+  
+  .rotate-90-ccw {
+    -webkit-animation: rotate-90-ccw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            animation: rotate-90-ccw 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+  /* ----------------------------------------------
+ * Generated by Animista on 2020-10-9 17:1:55
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation rotate-90-ccw
+ * ----------------------------------------
+ */
+@-webkit-keyframes rotate-90-ccw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+}
+@keyframes rotate-90-ccw {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+  }
+  100% {
+    -webkit-transform: rotate(-270deg);
+            transform: rotate(-270deg);
+  }
+}
+
+.fade-in {
+  display: block;
+	-webkit-animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	        animation: fade-in 1.2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2020-10-9 17:36:44
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation fade-in
+ * ----------------------------------------
+ */
+ @-webkit-keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.none {
+  display: none;
+}
+
+  
+  @keyframes radial-pulse {
+    0% {
+      box-shadow: 0 0 0 0px rgba(183, 223, 67, 0.5);
+    }
+  
+    100% {
+      box-shadow: 0 0 0 40px rgba(183, 223, 67, 0);
+    }
+  }
+
+
+
+  
